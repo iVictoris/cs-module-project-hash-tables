@@ -20,8 +20,9 @@ class HashTable:
     Implement this.
     """
 
-    def __init__(self, capacity):
+    def __init__(self, capacity=8):
         # Your code here
+        self.capacity = capacity
 
 
     def get_num_slots(self):
@@ -35,6 +36,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
     def get_load_factor(self):
@@ -44,9 +46,10 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
-    def fnv1(self, key):
+    def fnv1(self, key, prime=2**40+2**8+0xb3, offset=14695981039346656037):
         """
         FNV-1 Hash, 64-bit
 
@@ -56,13 +59,13 @@ class HashTable:
         # Your code here
 
 
-    def djb2(self, key):
-        """
-        DJB2 hash, 32-bit
+    # def djb2(self, key):
+    #     """
+    #     DJB2 hash, 32-bit
 
-        Implement this, and/or FNV-1.
-        """
-        # Your code here
+    #     Implement this, and/or FNV-1.
+    #     """
+    #     # Your code here
 
 
     def hash_index(self, key):
@@ -82,6 +85,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
     def delete(self, key):
@@ -93,6 +97,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
     def get(self, key):
@@ -104,6 +109,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
     def resize(self, new_capacity):
@@ -114,6 +120,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
 
