@@ -1,17 +1,5 @@
-class HashTableEntry:
-    """
-    Linked List hash table key/value pair
-    """
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
-        self.next = None
-
-
-# Hash table can't have fewer than this many slots
-MIN_CAPACITY = 8
-
-
+from HashTableEntry.HashTableEntry import HashTableEntry
+from HashTableLinkedList.HashTableLinkedList import HashTableLinkedList
 class HashTable:
     """
     A hash table that with `capacity` buckets
